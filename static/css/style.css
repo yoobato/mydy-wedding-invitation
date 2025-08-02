@@ -923,17 +923,6 @@ letter-spacing: -0.25px;
 word-wrap:break-word;
 }
 
-.message_wrap .message_del {
-    position:relative;
-    width: 10px;
-    height:18px;
-    background: url(../image/ico_10_close.svg) no-repeat 0;
-    text-indent: -9999px;
-    background-size: 10px;
-    border: 0;
-    padding:0;
-}
-
 .message_wrap .btn_wrap {
 margin-top: 35px;
 }

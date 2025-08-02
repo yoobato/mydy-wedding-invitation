@@ -170,44 +170,6 @@ $("a.copy_account").on('click', function (e) {
     }
 });
 
-//방명록 저장
-$("#frmGuestbook").on("submit", function (e) {
-    e.preventDefault();
-    var form = $(this);
-    var url = form.attr('action');
-
-    $.ajax({
-        cache: false,
-        url: url,
-        type: 'POST',
-        data: form.serialize()
-    }).done(function (data, textStatus, jqXHR) {
-        //alert(data['message']);
-        $(".write_box").find("input").val("");  //저장 후 input value 초기화
-        toastPopup(data['message'], 2000);
-        if (data['status'] == true) {
-            $('#guestbook').html('');
-            $('a.btn_guestbook_more').click();
-        }
-    });
-});
-//방명록 목록
-$('a.btn_guestbook_more').on('click', function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    var lastId = 0;
-    if ($('.guestbook_item').length > 0) {
-        lastId = $('.guestbook_item').last().data('guestbook-id');
-    }
-    url += "&idx=" + lastId;
-
-    loadGuestbook(url,'next');
-});
-$('a.btn_guestbook_all').on('click', function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    loadGuestbook(url,'all');
-});
 //방명록 목록 읽기
 var loadGuestbook = function (url, type) {
     $.ajax({
@@ -223,35 +185,6 @@ var loadGuestbook = function (url, type) {
         }
     });
 }
-//방명록 댓글 토글 이벤트
-$("body").on("click", 'button.message_del', function (e) {
-    e.preventDefault();
-    $(this).parents('li').find(".password_check").slideToggle();
-});
-//방명록 댓글 삭제 이벤트
-$("body").on("click", 'a.btn_delete_guestbook', function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    var password = $(this).parent().find('input[name="password"]').val();
-
-    $.ajax({
-        cache: false,
-        url: url,
-        type: 'POST',
-        data: {
-            Password: password
-        }
-    }).done(function (data, textStatus, jqXHR) {
-        //alert(data['message']);
-        toastPopup(data['message'], 2000);
-        if (data['status'] == true) {
-            $('#guestbook').html('');
-            $('a.btn_guestbook_more').click();
-        }
-    });
-});
-
-
 
 //페이지 폭 조정
 var resizePage = function () {
