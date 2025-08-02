@@ -111,12 +111,6 @@ $(function () {
 		}
 	});
 
-	setTimeout(function () {
-		if ($("#Bgm_Auto_Use_YN").val() == "Y") {
-			$(".bgm_play_btn").trigger("click");
-		}
-	}, 5000);
-
 	//$('.search_input').on('focus', function () {
 	//	$('.all_menu').css('display', 'block');
 	//});
