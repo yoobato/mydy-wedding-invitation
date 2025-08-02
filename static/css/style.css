@@ -616,76 +616,15 @@ letter-spacing:-0.35px;
 color:#333;
 }
 
-div.invitation_gift .btn .btn_text02 {
-display: inline-block;
-font-size:15px;
-line-height:22px;
-background: url(/img/order/c_flowers/flowers_arr.png) no-repeat 100%;
-background-size: 6px;
-padding-right: 12px;
-margin-left: 30px;
-font-weight: 400;
-letter-spacing:-0.38px;
-color:#333;
-}
 @media screen and (max-width:340px) {
 
     div.invitation_gift .btn {height :95px;}
     div.invitation_gift .btn img {width:150px; right:0;}
 
     div.invitation_gift .btn .btn_text01 {font-size:12px; padding-top:16px;}
-    div.invitation_gift .btn .btn_text02 {font-size:13px;}
 
-    div.invitation_gift .btn .btn_text01,
-    div.invitation_gift .btn .btn_text02 {margin-left: 20px;}
+    div.invitation_gift .btn .btn_text01 {margin-left: 20px;}
 }
-
-/* 화환 배너 플로팅 */
-.banner_floating {
-    position: fixed;
-    max-width: 144px;
-    bottom: 16px;
-    left: 16px;
-    z-index: 10;
-}
-.banner_floating a {
-    display: block;
-    width: 144px;
-    height: 56px;
-    overflow: hidden;
-    border-radius: 28px;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.16);
-    transition: width 0.3s ease, border-radius 0.3s ease;
-    -webkit-transition: width 0.3s ease, border-radius 0.3s ease, opacity 0.3s ease;
-    -webkit-border-radius: 28px;
-}
-
-.banner_floating img {
-    display: block;
-    height: 100%;
-}
-
-.banner_floating.down a {
-    width: 56px;
-}
-
-.banner_floating .btn_close {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 0;
-    right: -18px;
-    background: url(../image/ico_floating_close.png) 0 0 no-repeat;
-    background-size: 16px 16px;
-    border: 0 none;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999px;
-}
-.banner_floating.hidden{
-    display:none;
-}
-
 
 /* 신랑 & 신부에게 마음 전하기 */
 .remittance {
