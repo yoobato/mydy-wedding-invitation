@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g transform="translate(-327 -16)">
+        <circle data-name="타원 128" cx="16" cy="16" r="16" transform="translate(327 16)" style="opacity:.3"/>
+        <g data-name="구성 요소 80 – 2">
+            <path data-name="Vector (Stroke)" d="M.75 1.1A.688.688 0 0 1 1.5.5H3a.688.688 0 0 1 .75.6v10.8a.688.688 0 0 1-.75.6H1.5a.854.854 0 0 1-.53-.176.547.547 0 0 1-.22-.424zm7.5 0A.688.688 0 0 1 9 .5h1.5a.854.854 0 0 1 .53.176.547.547 0 0 1 .22.424v10.8a.688.688 0 0 1-.75.6H9a.688.688 0 0 1-.75-.6z" transform="translate(337.25 25.5)" style="fill:#fff;fill-rule:evenodd"/>
+            <path data-name="사각형 697" style="fill:none" d="M0 0h20v20H0z" transform="translate(333 22)"/>
+        </g>
+    </g>
+</svg>
